@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Monster Quiz!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="result">
+            <img src="bg.png" alt="A background image of crystals" class="bg">
+            <img src="big-guys/blue/CPU.webp" alt="The result of the quiz" class="img-result">
+            <p style="margin-bottom: 0;">name is a placeholder-text!</p>
+        </div>
+        <form action=" " method="get">
+            <div class="name-entry">
+                <input type="text" id="name" name="name" required minlength="3" maxlength="20" placeholder=" ">
+                <label for="name">enter the name by which u are invoked</label>
+            </div>
+            <div class="color-select">
+                <span style="font-size: 24px;">pick a color out of these that u like best</span>
+                <select name="fav-color" id="fav-color">
+                    <option value="blue" selected>Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+                <fieldset>
+                    <legend>What kind of gamer are u??</legend>
+                    <div class="size-choice">
+                        <div class="radio">
+                            <input type="radio" name="size" id="size-s">
+                            <label for="size-s">i'm just a little guy... a small creature...</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="size" id="size-m">
+                            <label for="size-m">I Am Of Average Size And Build</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="size" id="size-l">
+                            <label for="size-l">HUGE!!!!!!</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="secret-area">
+                    <textarea name="secret" id="secret" cols="30" rows="10" minlength="10" maxlength="100" placeholder=" "></textarea>
+                    <label for="secret">tell me a secret. or w/e u want really. it doesn't matter.</label>
+                </div>
+                <br>
+                <span>
+                    <img src="HandCursor.gif" alt="Right pointing cursor." style="position: relative; top: 12px; left: 125px;">
+                </span>
+                <button type="submit">Summon</button>
+        </form>
+    </div>
+</body>
+</html>
