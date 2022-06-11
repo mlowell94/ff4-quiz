@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 @font-face {
     font-family: "ff4";
     src: url("ff4-2.ttf");
@@ -25,18 +30,17 @@ form {
 
 .bg {
     position: absolute;
-    top: -202px;
-    left: 14px;
+    top: -198px;
+    left: 134px;
     z-index: -1;
-
     border: #FFFFFF ridge 2px;
     border-radius: 2%;
 }
 
 .img-result {
     position: absolute;
-    top: -148px;
-    left: 85px;
+    top: -134px;
+    left: 200px;
 }
 
 form>div {

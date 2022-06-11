@@ -53,7 +53,47 @@ function finalNum(number) {
         finalNum += temp;
     });
     while(finalNum >= 10) {
-        finalNum /= 2;
+        finalNum %= 9;
     }
     return parseInt(finalNum);
+}
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let images = [];
+    let number = finalNum(toNumber(toArray(form['name'].value + form['secret'].value)));
+    let color = form['fav-color'].value;
+    let rad = getSize(document.querySelector('input[name="size"]:checked').value);
+
+    for(i = 1; i < 10; i++) {
+        images.push(`${rad}/${color}/${i}.webp`)
+    }
+    let result = document.querySelector('.img-result');
+    if(images[number] == undefined) {
+        console.log(number)
+        number -= 1;
+    }
+    if(form['chance'].checked) {
+        let temp = Math.floor(Math.random() * 1000);
+        console.log(temp)
+        if(temp  > 1) {
+            result.src = `special/${color}.webp`;
+            return;
+        }
+    }
+    result.src = `${images[number]}`;
+})
+
+function getSize(size) {
+    if(size == 's') {
+        return 'little-guys';
+    }
+    if(size == 'm') {
+        return 'medium-guys';
+    }
+    if(size == 'l') {
+        return 'big-guys'
+    }
 }

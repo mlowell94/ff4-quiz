@@ -12,13 +12,13 @@
     <div class="wrapper">
         <div class="result">
             <img src="bg.png" alt="A background image of crystals" class="bg">
-            <img src="big-guys/blue/CPU.webp" alt="The result of the quiz" class="img-result">
-            <p style="margin-bottom: 0;">name is a placeholder-text!</p>
+            <img src="big-guys/blue/5.webp" alt="The result of the quiz" class="img-result">
+            <p style="margin-bottom: 0;">enter some data and get paired with a monster</p>
         </div>
-        <form action=" " method="get">
+        <form action=" " method="get" id="quiz">
             <div class="name-entry">
                 <input type="text" id="name" name="name" required minlength="3" maxlength="20" placeholder=" ">
-                <label for="name">enter the name by which u are invoked</label>
+                <label for="name">what name do u have</label>
             </div>
             <div class="color-select">
                 <span style="font-size: 24px;">pick a color out of these that u like best</span>
@@ -34,15 +34,15 @@
                     <legend>What kind of gamer are u??</legend>
                     <div class="size-choice">
                         <div class="radio">
-                            <input type="radio" name="size" id="size-s">
+                            <input type="radio" name="size" id="size-s" value="s">
                             <label for="size-s">i'm just a little guy... a small creature...</label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="size" id="size-m">
+                            <input type="radio" name="size" id="size-m" value="m">
                             <label for="size-m">I Am Of Average Size And Build</label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="size" id="size-l">
+                            <input type="radio" name="size" id="size-l" value="l">
                             <label for="size-l">HUGE!!!!!!</label>
                         </div>
                     </div>
