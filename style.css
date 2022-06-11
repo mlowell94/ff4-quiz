@@ -31,7 +31,8 @@ form {
 .bg {
     position: absolute;
     top: -198px;
-    left: 134px;
+    left: 122px;
+    right: 122px;
     z-index: -1;
     border: #FFFFFF ridge 2px;
     border-radius: 2%;
@@ -40,7 +41,8 @@ form {
 .img-result {
     position: absolute;
     top: -134px;
-    left: 200px;
+    left: 173px;
+    right: 51px;
 }
 
 form>div {

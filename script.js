@@ -78,7 +78,7 @@ form.addEventListener('submit', function(e) {
     if(form['chance'].checked) {
         let temp = Math.floor(Math.random() * 1000);
         console.log(temp)
-        if(temp  > 1) {
+        if(temp  > 950) {
             result.src = `special/${color}.webp`;
             return;
         }
